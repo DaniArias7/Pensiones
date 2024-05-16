@@ -55,7 +55,7 @@ def main():
             # Registrar nuevo usuario
             nombre = input("Ingrese el nombre: ")
             edad = get_int_input("Ingrese la edad: ")
-            estado_civil = get_str_input("Ingrese el estado civil (soltero/cansado)")
+            estado_civil = get_str_input("Ingrese el estado civil (soltero/casado)")
 
             usuario = Usuario(nombre, edad, estado_civil)
             controlador_pensiones.InsertarUsuario(usuario)
