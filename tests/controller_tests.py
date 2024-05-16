@@ -1,5 +1,5 @@
 import sys
-sys.path.append('.')
+sys.path.append('C:/Users/ACER/Pensiones')
 from src.controller.app_controller import ControladorPensiones
 from src.model.user import Usuario
 import unittest

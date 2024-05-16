@@ -1,5 +1,5 @@
 import sys
-sys.path.append('.')
+sys.path.append('C:/Users/ACER/Pensiones')
 from src.model.calculator import CalculadoraPensional
 from src.model.user import Usuario
 from src.controller.app_controller import ControladorPensiones

@@ -1,7 +1,7 @@
 import unittest
 import sys
 import sys
-sys.path.append("C:/Users/ACER/Desktop/Calculadora_Pension")  
+sys.path.append("C:/Users/ACER/Pensiones")  
 
 
 from src.model.calculator import CalculadoraPensional
