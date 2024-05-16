@@ -23,7 +23,7 @@ class ControladorPensionesTest(unittest.TestCase):
         self.assertEqual(len(pensiones), 0)
 
     def test_insertar_usuario(self):
-        usuario = Usuario("Juan Perez", 30, "soltero")
+        usuario = Usuario("Roxana Suarez", 30, "soltero")
         self.controlador.InsertarUsuario(usuario)
         usuarios = self.controlador.ObtenerUsuarios()
         self.assertEqual(len(usuarios), 1)
@@ -40,7 +40,7 @@ class ControladorPensionesTest(unittest.TestCase):
         self.assertEqual(len(usuarios), 1)
 
     def test_insertar_pension(self):
-        usuario = Usuario("Juan Perez", 30, "soltero")
+        usuario = Usuario("Maria luz", 30, "soltero")
         self.controlador.InsertarUsuario(usuario)
         usuario_id = self.controlador.ObtenerUsuarios()[0].id
         ahorro_pensional = 100000
