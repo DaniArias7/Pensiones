@@ -137,20 +137,19 @@ def main():
                     estado_civil = input("Ingrese el estado civil (casado/soltero): ").lower()
                     esperanza_vida = get_int_input("Ingrese la esperanza de vida esperada: ")
 
-                    try:
-                        ahorro_pensional, _ = calculadora_pensional.calculo_ahorro_pensional(usuario.age, salario, semanas_laboradas, rentabilidad_fondo, tasa_administracion)
-                        pension, _ = calculadora_pensional.calculo_pension(usuario.age, ahorro_pensional, sexo, estado_civil, esperanza_vida)
+                try:
+                    ahorro_pensional, _ = calculadora_pensional.calculo_ahorro_pensional(usuario.age, salario, semanas_laboradas, rentabilidad_fondo, tasa_administracion)
+                    pension, _ = calculadora_pensional.calculo_pension(usuario.age, ahorro_pensional, sexo, estado_civil, esperanza_vida)
 
-                        print(f"El ahorro pensional esperado es: {format_number_with_dots(ahorro_pensional)}")
-                        print(f"La pensión esperada es: {format_number_with_dots(pension)}")
+                    print(f"El ahorro pensional esperado es: {format_number_with_dots(ahorro_pensional)}")
+                    print(f"La pensión esperada es: {format_number_with_dots(pension)}")
 
-                        # Agregar nueva pensión
-                        controlador_pensiones.InsertarPension(usuario.id, ahorro_pensional, pension)
-                        print("Pensión registrada correctamente.")
-                    except Exception as e:
-                        print(f"Error: {e}")
-                else:
-                    print("No se encontró el usuario.")
+                    # Agregar nueva pensión
+                    controlador_pensiones.InsertarPension(usuario.id, ahorro_pensional, pension)
+                    print("Pensión registrada correctamente.")
+                except Exception as e:
+                    print(f"Error al calcular la pensión: {type(e).__name__}: {e}")
+
 
         elif opcion == 6:
             # Salir
