@@ -50,7 +50,3 @@ unittest: Para la realización de pruebas unitarias.
 - Ejecuta las pruebas unitarias desde el editor utilizando las funcionalidades integradas.
 - Instrucciones de Uso para Ejecutar las Pruebas Unitarias
 - Para ejecutar las pruebas unitarias, sigue las instrucciones proporcionadas en la sección anterior según tu preferencia de ejecución (sin editor de código, desde consola o desde Visual - - Studio Code u otro editor).
-
-## Licencia
-[Descripción de la licencia]
-
